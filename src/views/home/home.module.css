@@ -1,0 +1,8 @@
+.container{
+    grid-template-columns:  'navbar navbar navbar'
+                            'about about about'
+                            'tecnologies tecnologies';
+
+    background-color:rgb(54, 10, 95);
+    width: 100%;
+}
