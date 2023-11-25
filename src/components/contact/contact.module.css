@@ -1,3 +1,4 @@
 .container{
+    grid-area: contact;
     background-color: rgb(131, 57, 201);
 }

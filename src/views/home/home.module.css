@@ -1,8 +1,36 @@
-.container{
-    grid-template-columns:  'navbar navbar navbar'
-                            'about about about'
-                            'tecnologies tecnologies';
+.container {
+  display: grid;
+  grid-template-areas:
+    "navbar navbar navbar navbar navbar navbar navbar navbar"
+    "about about about about about about about about"
+    "tecno tecno tecno tecno tecno tecno tecno tecno "
+    "projects projects projects projects projects projects projects projects"
+    "contact contact contact contact contact contact contact contact";
+  justify-content: center;
+  background-color: rgb(54, 10, 95);
+  width: 100vh;
+  height: 50rem;
+}
 
-    background-color:rgb(54, 10, 95);
-    width: 100%;
+.profile{
+  height: 100vh;
+}
+.navbar {
+  grid-area: navbar;
+  background-color: azure;
+}
+.about {
+  grid-area: about;
+}
+
+.tecnologies {
+  grid-area: tecno;
+}
+
+.contact {
+  grid-area: contact;
+}
+
+.projects{
+  grid-area: projects;
 }
