@@ -1,17 +1,20 @@
-
-.container{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    margin: 8rem 0 2rem 0;
+.container {
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
+  margin: 2rem 0 2rem 0;
+  align-items: center;
+  height: 60vmin;
 }
-.image{
-    border-radius: 100%;
-    width: 8rem;
+.image {
+  border-radius: 100%;
+  width: 12rem;
+  height: 12rem;
+  margin-left: 5rem;
 }
 
-.paragraph{
-    width: 30rem;
-    text-align: left;
-    padding-left: 2rem;
+.paragraph {
+  width: 30rem;
+  text-align: left;
+  margin-left: 5rem;
 }

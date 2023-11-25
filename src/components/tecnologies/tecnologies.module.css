@@ -1,0 +1,46 @@
+
+.logos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:end;
+    height: 24vmin;
+}
+.logo{
+    height: 8rem;
+    margin: 1rem;
+}
+
+
+
+.button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    margin: 1rem;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #3f13a4;
+    cursor: pointer;
+    transition: border-color 0.25s;
+  }
+  .button:hover {
+    border-color: #646cff;
+  }
+  .button:focus,
+  .button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+  
+  @media (prefers-color-scheme: light) {
+    :root {
+      color: #213547;
+      background-color: #ffffff;
+    }
+    a:hover {
+      color: #747bff;
+    }
+    button {
+      background-color: #f9f9f9;
+    }
+  }

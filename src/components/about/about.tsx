@@ -6,10 +6,13 @@ export const Aboutme = () => {
   return (
     <div className={styles.container}>
       <img src={imageProfile} alt="imagen de perfil" className={styles.image} />
-      <p className={styles.paragraph}>
-        Hola! Mi nombre es Leandro, soy desarrollador web full stack con
-        background en diseño gráfico.
-      </p>
+      <div className={styles.paragraph}>
+        <h1>Full Stack Web Developer</h1>
+        <p >
+          Hola! Mi nombre es Leandro, soy desarrollador web full stack con
+          background en diseño gráfico.
+        </p>
+      </div>
     </div>
   );
 };

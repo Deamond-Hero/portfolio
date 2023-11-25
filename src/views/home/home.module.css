@@ -1,5 +1,6 @@
 .container {
   display: grid;
+
   grid-template-areas:
     "navbar navbar navbar navbar navbar navbar navbar navbar"
     "about about about about about about about about"
@@ -7,17 +8,16 @@
     "projects projects projects projects projects projects projects projects"
     "contact contact contact contact contact contact contact contact";
   justify-content: center;
-  background-color: rgb(54, 10, 95);
-  width: 100vh;
-  height: 50rem;
+  overflow: 100vh;
+  width: 100%;
+  height: 100vh;
 }
 
-.profile{
+.profile {
   height: 100vh;
 }
 .navbar {
   grid-area: navbar;
-  background-color: azure;
 }
 .about {
   grid-area: about;
@@ -31,6 +31,6 @@
   grid-area: contact;
 }
 
-.projects{
+.projects {
   grid-area: projects;
 }
