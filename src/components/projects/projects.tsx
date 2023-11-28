@@ -1,6 +1,6 @@
 import ReactPlayer from "react-player";
 import style from "./projects.module.css";
-import previewGameStack from "../../assets/game.png";
+import previewGameStack from "../../assets/Game.png";
 import previewCountries from "../../assets/countries.png";
 export const Projects = () => {
   const urlGameStack = "https://www.youtube.com/watch?v=5T9n18-FRgw";
