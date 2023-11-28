@@ -1,4 +1,3 @@
-import React from "react";
 import ReactPlayer from "react-player";
 import style from "./projects.module.css";
 import previewGameStack from "../../assets/game.png";
