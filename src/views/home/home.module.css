@@ -2,11 +2,11 @@
   display: grid;
 
   grid-template-areas:
-    "navbar navbar navbar navbar navbar navbar navbar navbar"
-    "about about about about about about about about"
-    "tecno tecno tecno tecno tecno tecno tecno tecno "
-    "projects projects projects projects projects projects projects projects"
-    "contact contact contact contact contact contact contact contact";
+    "navbar navbar navbar"
+    "about about about"
+    "tecno tecno tecno"
+    "projects projects projects"
+    "contact contact contact";
   justify-content: center;
   overflow: 100vh;
   width: 100%;
