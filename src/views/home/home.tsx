@@ -4,12 +4,16 @@ import { Navbar } from "../../components/navbar/navbar";
 import { Tecnologies } from "../../components/tecnologies/tecnologies";
 import { Projects } from "../../components/projects/projects";
 import style from "./home.module.css";
+// import { useRef } from "react";
 
 export const Home = () => {
+
+//  const Ref= useRef()
+
   return (
     <div className={style.container}>
       <div className={style.profile}>
-        <div >
+        <div>
           <Navbar />
         </div>
         <div className={style.about}>

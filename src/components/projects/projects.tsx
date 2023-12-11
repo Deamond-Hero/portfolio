@@ -2,6 +2,9 @@ import ReactPlayer from "react-player";
 import style from "./projects.module.css";
 import previewGameStack from "../../assets/Game.png";
 import previewCountries from "../../assets/countries.png";
+import { Descripcion } from "../../utils/ModalGamestack";
+import { gameStack } from "../../utils/descriptions";
+import { countries } from "../../utils/descriptions";
 export const Projects = () => {
   const urlGameStack = "https://www.youtube.com/watch?v=5T9n18-FRgw";
   const urlCountries = "https://youtu.be/j7bm0bqSo9w?si=Lq2y04AeplpMKKsu";
@@ -20,9 +23,11 @@ export const Projects = () => {
             controls={true}
             muted={true}
           />
-          <button>
-            <p>Ver detalle</p>
-          </button>
+
+          <div>
+            <Descripcion texto={gameStack} />
+          </div>
+
         </div>
         <div className={style.player}>
           <ReactPlayer
@@ -33,11 +38,12 @@ export const Projects = () => {
             width="auto"
             controls={true}
             muted={true}
-            
           />
-          <button>
-            <p>Ver detalle</p>
-          </button>
+
+          <div>
+            <Descripcion texto={countries} />
+          </div>
+
         </div>
       </div>
     </div>
