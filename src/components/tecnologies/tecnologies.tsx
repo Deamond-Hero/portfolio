@@ -4,6 +4,8 @@ import rc from "../../assets/RCT.png";
 import pg from "../../assets/PG.png";
 import fg from "../../assets/fg.png";
 import njs from "../../assets/NJS.png";
+import css from "../../assets/CSS.png";
+import html from "../../assets/html.png"
 import style from "./tecnologies.module.css";
 
 export const Tecnologies = () => {
@@ -12,11 +14,27 @@ export const Tecnologies = () => {
       <div className={style.logos}>
         <div className={style.contenedorLogo}>
           <button className={style.button}>
+            <img src={html} alt="CSS" className={style.logo} />
+          </button>
+          <div className={style.descripcion} id="descripcion">
+            Descripción de la imagen
+          </div>
+        </div>
+        <div className={style.contenedorLogo}>
+          <button className={style.button}>
+            <img src={css} alt="CSS" className={style.logo} />
+          </button>
+          <div className={style.descripcion} id="descripcion">
+            Descripción de la imagen
+          </div>
+        </div>
+        <div className={style.contenedorLogo}>
+          <button className={style.button}>
             <img src={js} alt="JavaScript" className={style.logo} />
           </button>
           <div className={style.descripcion} id="descripcion">
             Descripción de la imagen
-          </div> 
+          </div>
         </div>
         <div className={style.contenedorLogo}>
           <button className={style.button}>
