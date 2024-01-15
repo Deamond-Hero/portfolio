@@ -2,8 +2,8 @@
   display: grid;
 
   grid-template-areas:
-    "navbar navbar navbar"
     "profile profile profile"
+    "skills skills skills"
     "projects projects projects"
     "contact contact contact";
   justify-content: center;
@@ -12,7 +12,7 @@
   height: 100vh;
 }
 
-.profile {
+.welcome {
   height: 100vh;
   grid-area: profile
 }
@@ -23,7 +23,7 @@
   grid-area: about;
 }
 
-.tecnologies {
+.skills {
   grid-area: tecno;
 }
 

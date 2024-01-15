@@ -2,10 +2,10 @@
 import imageProfile from "../../assets/foto.jpg";
 import styles from "./about.module.css";
 
-export const Aboutme = () => {
+export const Welcome = () => {
   return (
-    <div className={styles.container}>
-      <img src={imageProfile} alt="imagen de perfil" className={styles.image} />
+    <div >
+      <div className={styles.container}>
       <div className={styles.paragraph}>
         <h1>Full Stack Web Developer</h1>
         <p >
@@ -13,6 +13,10 @@ export const Aboutme = () => {
           background en diseño gráfico.
         </p>
       </div>
+      
+      <img src={imageProfile} alt="imagen de perfil" className={styles.image} />
+      </div>
+      <button>Descargar CV</button>
     </div>
   );
 };

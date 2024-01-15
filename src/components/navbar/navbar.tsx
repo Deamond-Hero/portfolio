@@ -1,10 +1,14 @@
 import style from './navbar.module.css'
-export const Navbar = () =>{
+export const Navbar = () => {
     return (
-     <nav className={style.containerNav}>
-        <button className={style.button}>Tecnologías</button>
-        <button className={style.button}>Proyectos</button>
-        <button className={style.button}>Contacto</button>
-     </nav>   
+        <nav className={style.containerNav}>
+            <ul className={style.navbar}>
+                <li>Inicio</li>
+                <li>Skills</li>
+                <li>Proyectos</li>
+                <li>Sobre mi</li>
+                <li>Contacto</li>
+            </ul>
+        </nav>
     )
 }
