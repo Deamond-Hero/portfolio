@@ -14,18 +14,33 @@
     display: flex;
     background-color: #FFFFFF ;
     border-radius: 100%;
-    width: 50px;
-    height: 50px;
+    width: 3rem;
+    height: 3rem;
     list-style-type: none;
     color: #0A1128;
-    font-size: large ;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-
+    fontSize: 100px;
     margin-top: 2rem;
 }
 
 .bar a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
+    color: #0A1128;
+    
+    
+}
+
+
+.bar .github img{
+    width: 3.2rem;
+}
+
+.bar img{
+    width: 1.5rem;
+    
 }

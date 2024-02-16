@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 60vmin;
+    width: 100%;
+}
+
+.imageContainer {
+    width: 50%;
+}
+
+.paragraph {
+    width: 50%;
+    text-align: right;
+}
+
+.imageContainer {
+    display: flex;
+}
+
+.imageContainer img {
+    width: 40%;
+    margin:auto;
+}
