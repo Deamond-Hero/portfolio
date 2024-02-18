@@ -11,6 +11,8 @@
   overflow: 100vh;
   width: auto;
   height: 100vh;
+ padding-left: 10%;
+ padding-right: 10%;
 }
 
 .navbar {
@@ -21,15 +23,20 @@
   grid-area: home;
 }
 .skills {
+  height: 100vh;
   grid-area: skills;
 }
 .projects {
+  height: 100vh;
   grid-area: projects;
 }
 .aboutMe {
+  height: 100vh;
   grid-area: about;
+
 }
 .contact {
+  height: 100vh;
   grid-area: contact;
 }
 

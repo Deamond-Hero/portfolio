@@ -1,10 +1,17 @@
 
 .logos{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    height: 24vmin;
+    height: 100%;
+
 }
+
+.logos h2{
+  background-color: #fff;
+align-items: start;
+}
+
 .logo{
     display: flex;
     align-items: center;
