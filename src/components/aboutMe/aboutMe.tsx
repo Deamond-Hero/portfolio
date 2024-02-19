@@ -1,12 +1,14 @@
 import styles from './about.module.css'
+import image1 from '../../assets/20191231_113910-min.jpg'
+import image2 from '../../assets/reset-img.png'
 
 export const AboutMe = () => {
     return (
 
         <div className={styles.container}>
             <div className={styles.imageContainer}>
-                <img className={styles.image} src='../src/assets/20191231_113910-min.jpg' />
-                <img className={styles.image} src='../src/assets/reset-img.png' />
+                <img className={styles.image} src={image1} alt='imagen1' />
+                <img className={styles.image} src={image2} alt='imagen2' />
             </div>
             <div className={styles.paragraph}>
                 <p>Sobre mi

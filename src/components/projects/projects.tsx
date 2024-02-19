@@ -10,40 +10,42 @@ export const Projects = () => {
   const urlCountries = "https://youtu.be/j7bm0bqSo9w?si=Lq2y04AeplpMKKsu";
 
   return (
-    <div className={style.container}>
-      <h2 className={style.titleProjects}>Proyectos</h2>
-      <div className={style.containerPlayer}>
-        <div className={style.player}>
-          <ReactPlayer
-            className={style.player}
-            light={<img src={previewGameStack} alt="Thumbnail" />}
-            url={urlGameStack}
-            height="100%"
-            width="auto"
-            controls={true}
-            muted={true}
-          />
+    <div className={style.projects}>
+      <div className={style.container}>
+        <h2 className={style.titleProjects}>Proyectos</h2>
+        <div className={style.containerPlayer}>
+          <div className={style.player}>
+            <ReactPlayer
+              className={style.player}
+              light={<img src={previewGameStack} alt="Thumbnail" />}
+              url={urlGameStack}
+              height="100%"
+              width="auto"
+              controls={true}
+              muted={true}
+            />
 
-          <div>
-            <Descripcion texto={gameStack} />
+            <div>
+              <Descripcion texto={gameStack} />
+            </div>
+
           </div>
+          <div className={style.player}>
+            <ReactPlayer
+              url={urlCountries}
+              className={style.player}
+              light={<img src={previewCountries} alt="Thumbnail" />}
+              height="100%"
+              width="auto"
+              controls={true}
+              muted={true}
+            />
 
-        </div>
-        <div className={style.player}>
-          <ReactPlayer
-            url={urlCountries}
-            className={style.player}
-            light={<img src={previewCountries} alt="Thumbnail" />}
-            height="100%"
-            width="auto"
-            controls={true}
-            muted={true}
-          />
+            <div>
+              <Descripcion texto={countries} />
+            </div>
 
-          <div>
-            <Descripcion texto={countries} />
           </div>
-
         </div>
       </div>
     </div>

@@ -9,14 +9,16 @@ import html from "../../assets/html.png"
 import style from "./skills.module.css";
 import { icons } from "../../utils/icons";
 
+
 export const Skills = () => {
   return (
-    <div>
+    <div className={style.skills}>
       <h2>Tech Skills</h2>
       <div className={style.logos}>
         <div className={style.contenedorLogo}>
           <button className={style.button}>
             <img src={html} alt="CSS" className={style.logo} />
+            <p>HTML</p>
           </button>
           <div className={style.descripcion} id="descripcion">
             Descripción de la imagen
@@ -25,6 +27,7 @@ export const Skills = () => {
         <div className={style.contenedorLogo}>
           <button className={style.button}>
             <img src={css} alt="CSS" className={style.logo} />
+            <p>CSS</p>
           </button>
           <div className={style.descripcion} id="descripcion">
             Descripción de la imagen
@@ -33,6 +36,7 @@ export const Skills = () => {
         <div className={style.contenedorLogo}>
           <button className={style.button}>
             <img src={js} alt="JavaScript" className={style.logo} />
+            <p>Javascript</p>
           </button>
           <div className={style.descripcion} id="descripcion">
             Descripción de la imagen
@@ -41,27 +45,32 @@ export const Skills = () => {
         <div className={style.contenedorLogo}>
           <button className={style.button}>
             <img src={ts} className={style.logo} />
+            <p>Typescript</p>
           </button>
         </div>
         <div className={style.contenedorLogo}>
           <button className={style.button}>
             <img src={rc} className={style.logo} />
+            <p>React</p>
+          </button>
+        </div>
+        <div className={style.contenedorLogo}>
+          <button className={style.button}>
+            <img src={njs} className={style.logo} />
+            <p>NodeJs</p>
           </button>
         </div>
         <div className={style.contenedorLogo}>
           <button className={style.button}>
             <img src={pg} className={style.logo} />
+            <p>Postgres</p>
           </button>
         </div>
         <div className={style.contenedorLogo}>
           {" "}
           <button className={style.button}>
             <img src={fg} className={style.logo} />
-          </button>
-        </div>
-        <div className={style.contenedorLogo}>
-          <button className={style.button}>
-            <img src={njs} className={style.logo} />
+            <p>Figma</p>
           </button>
         </div>
       </div>
@@ -69,7 +78,8 @@ export const Skills = () => {
       <div className={style.logos}>
         <div className={style.contenedorLogo}>
           <button className={style.button}>
-            <img src={html} alt="CSS" className={style.logo} />
+            <icons.RowingIcon />
+            <p>Proactividad</p>
           </button>
           <div className={style.descripcion} id="descripcion">
             Descripción de la imagen
@@ -77,7 +87,8 @@ export const Skills = () => {
         </div>
         <div className={style.contenedorLogo}>
           <button className={style.button}>
-            <img src={css} alt="CSS" className={style.logo} />
+            <icons.SportsKabaddiIcon />
+            <p>Empatía</p>
           </button>
           <div className={style.descripcion} id="descripcion">
             Descripción de la imagen
@@ -85,7 +96,8 @@ export const Skills = () => {
         </div>
         <div className={style.contenedorLogo}>
           <button className={style.button}>
-            <img src={js} alt="JavaScript" className={style.logo} />
+            <icons.Groups3Icon />
+            <p>Teamwork</p>
           </button>
           <div className={style.descripcion} id="descripcion">
             Descripción de la imagen
@@ -93,35 +105,34 @@ export const Skills = () => {
         </div>
         <div className={style.contenedorLogo}>
           <button className={style.button}>
-            <img src={ts} className={style.logo} />
+            <icons.EmojiObjectsIcon />
+            <p>Creatividad</p>
           </button>
         </div>
         <div className={style.contenedorLogo}>
           <button className={style.button}>
-            <img src={rc} className={style.logo} />
+            <icons.ExtensionIcon />
+            <p>Adaptabilidad</p>
           </button>
         </div>
         <div className={style.contenedorLogo}>
           <button className={style.button}>
-            <img src={pg} className={style.logo} />
-          </button>
-        </div>
-        <div className={style.contenedorLogo}>
-          {" "}
-          <button className={style.button}>
-            <img src={fg} className={style.logo} />
+            <icons.RocketLaunchIcon />
+            <p>Desarrollo constante</p>
           </button>
         </div>
         <div className={style.contenedorLogo}>
           <button className={style.button}>
-            <img src={njs} className={style.logo} />
+            <icons.NordicWalkingIcon />
+            <p>Autogestión</p>
           </button>
         </div>
       </div>
-      <div>
+      <div className={style.academico}>
         <h2>Académico</h2>
-
-        <icons.BookIcon />
+        <div>
+          <icons.BookIcon />
+        </div>
       </div>
 
     </div>

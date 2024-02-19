@@ -1,63 +1,73 @@
+.skills{
+  height: 100%;
+}
 
-.logos{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: 100%;
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100%;
 
 }
 
-.logos h2{
+.logos h2 {
   background-color: #fff;
-align-items: start;
+  align-items: start;
 }
 
-.logo{
-    display: flex;
-    align-items: center;
-    justify-content:center ;
-    height: 4rem;
-    margin: 0.5rem;
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  margin: 0.5rem;
 }
 
-.contenedorLogo{
-
-}
 
 .button {
-    border-radius: 8px;
-    border: 1px solid transparent;
-    margin: 1rem;
-    font-size: 1em;
-    font-weight: 500;
-    font-family: inherit;
-    background-color: #3f13a4;
-    cursor: pointer;
-    transition: border-color 0.25s;
-    
-  }
-  .button:hover {
-    border-color: #646cff;
-  }
-  .button:focus,
-  .button:focus-visible {
-    outline: 4px auto -webkit-focus-ring-color;
-  }
-  
-  @media (prefers-color-scheme: light) {
-    :root {
-      color: #213547;
-      background-color: #ffffff;
-    }
-    a:hover {
-      color: #747bff;
-    }
-    button {
-      background-color: #f9f9f9;
-    }
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  margin: 1rem;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #3f13a4;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  width: 8rem;
+  height: 8rem;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.button:hover {
+  border-color: #646cff;
+}
+
+.button:focus,
+.button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
   }
 
-.descripcion{
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.descripcion {
   position: absolute;
   top: 100%;
   left: 0;
@@ -65,4 +75,17 @@ align-items: start;
   color: #fff;
   padding: 5px;
   display: none;
+}
+
+.logos p {
+  text-align: center;
+  margin: 0.25rem;
+}
+
+.button svg{
+  font-size: 4rem;
+}
+
+.academico{
+  display: flex;
 }

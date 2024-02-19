@@ -1,12 +1,17 @@
+.projects{
+margin-top:100%;
+}
+
 .container{
     height: 100vh;
 
 }
-.containerPlayer{
+.containerPlayer {
     display: grid;
     grid-template-columns: repeat(
         auto-fit, minmax(150px, 1fr));
-    gap: 20px
+    gap: 20px;
+
 }
 
 .player {
