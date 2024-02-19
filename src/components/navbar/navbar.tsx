@@ -1,4 +1,3 @@
-import { RefObject } from 'react'
 import style from './navbar.module.css'
 
 
