@@ -6,8 +6,7 @@ import { Skills } from "../../components/skills/skills";
 import { Projects } from "../../components/projects/projects";
 import { IconBar } from "../../components/iconsToolbar/iconsBar";
 import style from "./page.module.css";
-import { useEffect, useRef } from "react";
-import { scrollDownByPercentage } from "../../utils/scrollFunction";
+import { useRef } from "react";
 
 export const Page = () => {
 
