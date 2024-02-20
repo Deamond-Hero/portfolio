@@ -136,12 +136,14 @@ export const Skills = () => {
             <br />
             (2022 - 2023) </p>
         </div>
+
+
         <div className={style.item}>
           <icons.BookIcon />
-          <p>CorderHouse “JS avanzado”
-            - Programming fundamentals, JavaScript, HTML, CSS, Node.Js
+          <p>Acressio
+            -Orador con fundamentos en PNL
             <br />
-            (2021) </p>
+            (2018)</p>
         </div>
         <div className={style.item}>
           <icons.BookIcon />
@@ -152,17 +154,17 @@ export const Skills = () => {
         </div>
         <div className={style.item}>
           <icons.BookIcon />
-          <p>Acressio
-            -Orador con fundamentos en PNL
-            <br />
-            (2018)</p>
-        </div>
-        <div className={style.item}>
-          <icons.BookIcon />
           <p>Escuela de artes aplicadas Lino Enea Spilimbergo (Carrera terciaria)
             -Diseño Gráfico y Publicitario
             <br />
             (2012 - 2015) </p>
+        </div>
+        <div className={style.item}>
+          <icons.BookIcon />
+          <p>CorderHouse “JS avanzado”
+            - Programming fundamentals, JavaScript, HTML, CSS, Node.Js
+            <br />
+            (2021) </p>
         </div>
       </div>
     </div>
