@@ -19,7 +19,11 @@ export const Page = () => {
 
   return (
     <div className={style.container}>
-      <IconBar contactRef={contactRef}/>
+      <IconBar contactRef={contactRef}
+        homeRef={homeRef}
+        skillsRef={skillsRef}
+        projectsRef={projectsRef}
+        aboutRef={aboutRef} />
       <Navbar homeRef={homeRef}
         skillsRef={skillsRef}
         projectsRef={projectsRef}
