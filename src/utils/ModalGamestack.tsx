@@ -1,13 +1,18 @@
 import { useState } from "react";
 import ReactModal from "react-modal";
 import style from "./ModalStyle.module.css";
+import GitHub from "@mui/icons-material/GitHub";
+
 
 
 interface DescripcionGameStackProps {
-  texto :string;
+  texto: string;
+  linkGit: string;
+  title: string;
 }
 
-export const Descripcion : React.FC<DescripcionGameStackProps> = ({texto}) => {
+
+export const Descripcion: React.FC<DescripcionGameStackProps> = ({ texto, linkGit, title }) => {
   const [open, setOpen] = useState<boolean>(false);
 
   function modalVisible() {
@@ -55,7 +60,9 @@ export const Descripcion : React.FC<DescripcionGameStackProps> = ({texto}) => {
               X
             </button>
           </div>
+          <h1 style={{ color: "black" }}>{title}</h1>
           <p style={{ color: "black" }}>{texto}</p>
+          <p style={{display:"flex", justifyContent: "center"}}><a href={linkGit}><GitHub/></a></p>
         </div>
       </ReactModal>
     </div>

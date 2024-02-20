@@ -14,8 +14,8 @@
     display: flex;
     background-color: #FFFFFF ;
     border-radius: 100%;
-    width: 3rem;
-    height: 3rem;
+    width: 4rem;
+    height: 4rem;
     list-style-type: none;
     color: #0A1128;
     justify-content: center;
@@ -23,6 +23,18 @@
     text-decoration: none;
     margin-top: 2rem;
 }
+
+
+.bar li:hover{
+    transform: scale(1.2);
+    transition-duration: 1000ms;
+}
+
+.bar li:not(:hover){
+    transform: scale(1);
+    transition-duration: 1000ms;
+}
+
 
 .bar a{
     display: flex;
@@ -36,10 +48,12 @@
 
 
 .bar .github img{
-    width: 3.2rem;
+    width: 4.2rem;
 }
 
 .bar img{
-    width: 1.5rem;
+    width: 2.5rem;
     
 }
+
+

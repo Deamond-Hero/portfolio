@@ -1,4 +1,4 @@
-.skills{
+.skills {
   height: 100%;
 }
 
@@ -6,7 +6,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  height: 100%;
+
 
 }
 
@@ -29,8 +29,8 @@
   flex-direction: column;
   border-radius: 8px;
   border: 1px solid transparent;
-  margin: 1rem;
-  font-size: 1em;
+  margin: 0.5rem;
+  font-size: 1rem;
   font-weight: 500;
   font-family: inherit;
   background-color: #3f13a4;
@@ -82,10 +82,34 @@
   margin: 0.25rem;
 }
 
-.button svg{
+.button svg {
   font-size: 4rem;
 }
 
-.academico{
+.columnas {
   display: flex;
+  width: 100%;
+}
+
+.academico1 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+}
+
+
+
+.item {
+  display: flex;
+
+  width: 50%;
+  text-align: left;
+  align-items: center;
+}
+
+.item svg {
+  font-size: 2rem;
+  margin-right: 1rem;
+  margin-left: 2rem;
 }

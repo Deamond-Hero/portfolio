@@ -1,26 +1,76 @@
 .container {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
-    height: 100%;
     width: 100%;
-    margin-top: 100%;
+    margin-top: 10%;
+
 }
 
 .imageContainer {
     width: 50%;
 }
 
+
+
 .paragraph {
     width: 50%;
-    text-align: right;
+    text-align: left;
+    font-size: 0.8rem;
 }
+
+
 
 .imageContainer {
     display: flex;
 }
 
-.imageContainer img {
+
+.image1 {
+    width: 10%;
+    margin: auto;
+    transform: rotate(-2deg);
+    transition-duration: 2000ms;
+    z-index: 1; /* Ajustar según sea necesario */
+}
+
+.image1:hover {
+    transform: rotate(0deg);
+    box-shadow: 100%; /* Revisar si necesitas más ajustes en el sombreado */
+    width: 60%;
+    z-index: 9999;
+    margin: none;
+
+}
+
+.image2 {
+    width: 50%;
+    margin: auto;
+    transform: rotate(0deg);
+    transition-duration: 2000ms;
+}
+
+.image2:hover {
+    transform: rotate(0deg);
+    box-shadow: 100%; /* Revisar si necesitas más ajustes en el sombreado */
+    width: 100%;
+    z-index: 9999;
+    margin: none;
+}
+
+/* Cuando no está en estado :hover, restablecer a los valores originales */
+.image1:not(:hover){
     width: 40%;
-    margin:auto;
+    margin: auto;
+    transform: rotate(-3deg);
+    transition-duration: 1000ms;
+    z-index: 1; /* Ajustar según sea necesario */
+}
+
+.image2:not(:hover) {
+    width: 40%;
+    margin: auto;
+    transform: rotate(3deg);
+    transition-duration: 1000ms;
+    z-index: 1; /* Ajustar según sea necesario */
 }

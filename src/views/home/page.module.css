@@ -23,12 +23,15 @@
   grid-area: home;
 }
 .skills {
+  height: 100%;
   grid-area: skills;
 }
 .projects {
+  height: 100vh;
   grid-area: projects;
 }
-.aboutMe {
+.about {
+  height: 100vh;
   grid-area: about;
 
 }
