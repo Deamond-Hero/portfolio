@@ -2,16 +2,31 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 90%;
 
 
 }
+.container h1{
+margin-bottom: 1rem;
+
+
+}
+
+.container p{
+  font-size: 1.2rem;
+  font-weight:500;
+  color: #1282A2;
+  margin-bottom: 1rem;
+  
+  
+  }
 
 .containerAbout {
   display: flex;
   justify-content: center;
   flex-direction: row;
   align-items: center;
-  width: 50%;
+
   height: 100vh;
   margin-top: -2rem;
 }
@@ -37,8 +52,7 @@
 .image {
   display: flex;
   border-radius: 100%;
-  width: 100%;
-  height: 100%;
+  width: 300%;
   max-width: 300px;
   margin-left: 5rem;
 }
@@ -53,7 +67,9 @@
     justify-content: center;
     height: 100vh; /* 100% del viewport height */
     margin-bottom: 100px;
+    margin-top: 10%;
   }
+
 
   .containerAbout {
     margin-top: 8%;

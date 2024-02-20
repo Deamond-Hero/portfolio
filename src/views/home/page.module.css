@@ -19,8 +19,10 @@
   grid-area: navbar;
 }
 .home {
-  height: 100vh;
+  height: 100%;
   grid-area: home;
+  display: flex;
+  justify-content: center;
 }
 .skills {
   height: 100%;
@@ -31,7 +33,7 @@
   grid-area: projects;
 }
 .about {
-  height: 100vh;
+  height: 100%;
   grid-area: about;
 
 }

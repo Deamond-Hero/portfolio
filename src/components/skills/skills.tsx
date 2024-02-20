@@ -18,115 +18,113 @@ export const Skills = () => {
         <div className={style.contenedorLogo}>
           <button className={style.button}>
             <img src={html} alt="HTML" className={style.logo} />
-            <p>HTML</p>
           </button>
-          <div className={style.descripcion}>
-            Descripción de la imagen
-          </div>
+            <p>HTML</p>
+  
         </div>
+
         <div className={style.contenedorLogo}>
           <button className={style.button}>
             <img src={css} alt="CSS" className={style.logo} />
-            <p>CSS</p>
           </button>
-          <div className={style.descripcion}>
-            Descripción de la imagen
-          </div>
+            <p>CSS</p>
         </div>
+
         <div className={style.contenedorLogo}>
           <button className={style.button}>
             <img src={js} alt="JavaScript" className={style.logo} />
-            <p>Javascript</p>
           </button>
-          <div className={style.descripcion}>
-            Descripción de la imagen
-          </div>
+            <p>Javascript</p>
         </div>
+
         <div className={style.contenedorLogo}>
           <button className={style.button}>
             <img src={ts} className={style.logo} />
-            <p>Typescript</p>
           </button>
+            <p>Typescript</p>
         </div>
+
         <div className={style.contenedorLogo}>
           <button className={style.button}>
             <img src={rc} className={style.logo} />
-            <p>React</p>
           </button>
+            <p>React</p>
         </div>
+
         <div className={style.contenedorLogo}>
           <button className={style.button}>
             <img src={njs} className={style.logo} />
-            <p>NodeJs</p>
           </button>
+            <p>NodeJs</p>
         </div>
+
         <div className={style.contenedorLogo}>
           <button className={style.button}>
             <img src={pg} className={style.logo} />
-            <p>Postgres</p>
           </button>
+            <p>Postgres</p>
         </div>
+
         <div className={style.contenedorLogo}>
           <button className={style.button}>
             <img src={fg} className={style.logo} />
-            <p>Figma</p>
           </button>
+            <p>Figma</p>
         </div>
+
       </div>
       <h2>Soft Skills</h2>
       <div className={style.logos}>
         <div className={style.contenedorLogo}>
           <button className={style.button}>
             <icons.RowingIcon />
-            <p>Proactividad</p>
           </button>
-          <div className={style.descripcion}>
-            Descripción de la imagen
-          </div>
+            <p>Proactividad</p>
         </div>
+
         <div className={style.contenedorLogo}>
           <button className={style.button}>
             <icons.SportsKabaddiIcon />
-            <p>Empatía</p>
           </button>
-          <div className={style.descripcion}>
-            Descripción de la imagen
-          </div>
+            <p>Empatía</p>
         </div>
+
         <div className={style.contenedorLogo}>
           <button className={style.button}>
             <icons.Groups3Icon />
-            <p>Teamwork</p>
           </button>
-          <div className={style.descripcion}>
-            Descripción de la imagen
-          </div>
+            <p>Teamwork</p>
         </div>
+
         <div className={style.contenedorLogo}>
           <button className={style.button}>
             <icons.EmojiObjectsIcon />
-            <p>Creatividad</p>
           </button>
+            <p>Creatividad</p>
         </div>
+
         <div className={style.contenedorLogo}>
           <button className={style.button}>
             <icons.ExtensionIcon />
-            <p>Adaptabilidad</p>
           </button>
+            <p>Adaptabilidad</p>
         </div>
+
         <div className={style.contenedorLogo}>
           <button className={style.button}>
             <icons.RocketLaunchIcon />
-            <p>Desarrollo constante</p>
           </button>
+            <p>Desarrollo <br/>continuo</p>
         </div>
+
         <div className={style.contenedorLogo}>
           <button className={style.button}>
             <icons.NordicWalkingIcon />
-            <p>Autogestión</p>
           </button>
+            <p>Autogestión</p>
         </div>
       </div>
+
       <h2>Académico</h2>
       <div className={style.academico1}>
         <div className={style.item}>

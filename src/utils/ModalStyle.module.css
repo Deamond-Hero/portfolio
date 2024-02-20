@@ -1,8 +1,32 @@
-/* .container{
 
-} */
 .button{
     display: flex;
     justify-content: flex-end;
+    margin-bottom: -5rem;
 
 }
+
+.git{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.git p{
+    color: #0A1128;
+    margin:0 ;
+}
+
+.git a svg {
+    color: #0A1128;
+    font-size: 5rem;
+}
+
+.git a svg:hover {
+    color: #1282A2;
+    font-size: 5rem;
+}
+

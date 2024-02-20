@@ -32,6 +32,9 @@ export const Contact = () => {
             <p>Mensaje</p>
             <input type="text" maxLength={250} value={""}></input>
           </div>
+          <div className={style.send}>
+            <button>Enviar</button>
+          </div>
         </div>
       </div>
       <div className={style.footer}>

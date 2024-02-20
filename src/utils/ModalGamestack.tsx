@@ -20,7 +20,7 @@ export const Descripcion: React.FC<DescripcionGameStackProps> = ({ texto, linkGi
   }
 
   return (
-    <div>
+    <div className={style.modal}>
       <button
         onClick={() => {
           modalVisible();
@@ -33,6 +33,7 @@ export const Descripcion: React.FC<DescripcionGameStackProps> = ({ texto, linkGi
         onRequestClose={() => setOpen(false)}
         style={{
           overlay: {
+            zIndex:"2",
             display: "flex",
             position: "fixed",
             justifyContent: "center",
@@ -43,7 +44,7 @@ export const Descripcion: React.FC<DescripcionGameStackProps> = ({ texto, linkGi
           },
           content: {
             width: "60%",
-            maxHeight: "300px",
+            maxHeight: "400px",
             minHeight: "100px",
             margin: "auto",
             fontSize: "90%",
@@ -62,8 +63,12 @@ export const Descripcion: React.FC<DescripcionGameStackProps> = ({ texto, linkGi
           </div>
           <h1 style={{ color: "black" }}>{title}</h1>
           <p style={{ color: "black" }}>{texto}</p>
-          <p style={{display:"flex", justifyContent: "center"}}><a href={linkGit}><GitHub/></a></p>
+          <div className={style.git}>
+            <a title="Ir al repositorio" href={linkGit}><GitHub /></a><div />
+            <p>Ir al repositorio</p>
+          </div>
         </div>
+
       </ReactModal>
     </div>
   );

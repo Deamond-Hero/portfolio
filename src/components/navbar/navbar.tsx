@@ -7,8 +7,10 @@ export const Navbar: React.FC<NavbarProps> = ({ homeRef, skillsRef, projectsRef,
 
     return (
         <nav className={style.containerNav}>
+            <button className={style.open}>Abrir</button>
+            <button className={style.close}>Cerrar</button>
             <ul className={style.navbar}>
-                <li><a href='#' onClick={onClickTo(homeRef)}>Inicio</a></li>
+                <li><a href='#' onClick={onClickTo(homeRef)}>Home</a></li>
                 <li><a href='#' onClick={onClickTo(skillsRef)}>Skills</a></li>
                 <li><a href='#' onClick={onClickTo(projectsRef)}>Proyectos</a></li>
                 <li><a href='#' onClick={onClickTo(aboutRef)}>Sobre mi</a></li>

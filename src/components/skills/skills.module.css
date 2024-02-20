@@ -1,5 +1,6 @@
 .skills {
   height: 100%;
+  margin-top: 3.5rem;
 }
 
 .logos {
@@ -27,17 +28,17 @@
 .button {
   display: flex;
   flex-direction: column;
-  border-radius: 8px;
+  border-radius: 100%;
   border: 1px solid transparent;
   margin: 0.5rem;
   font-size: 1rem;
   font-weight: 500;
   font-family: inherit;
-  background-color: #3f13a4;
+  background-color: #034078;
   cursor: pointer;
   transition: border-color 0.25s;
-  width: 8rem;
-  height: 8rem;
+  width: 7rem;
+  height: 7rem;
   justify-content: center;
   align-items: center;
 
@@ -45,6 +46,7 @@
 
 .button:hover {
   border-color: #646cff;
+  cursor:auto;
 }
 
 .button:focus,
