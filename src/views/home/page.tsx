@@ -19,7 +19,7 @@ export const Page = () => {
 
   return (
     <div className={style.container}>
-      <IconBar />
+      <IconBar contactRef={contactRef}/>
       <Navbar homeRef={homeRef}
         skillsRef={skillsRef}
         projectsRef={projectsRef}

@@ -27,7 +27,7 @@
   grid-area: skills;
 }
 .projects {
-  height: 100vh;
+  height: 100%;
   grid-area: projects;
 }
 .about {
@@ -36,7 +36,7 @@
 
 }
 .contact {
-
+  height: 100vh;
   grid-area: contact;
 }
 

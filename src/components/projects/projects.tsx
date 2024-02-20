@@ -20,7 +20,6 @@ export const Projects = () => {
         <div className={style.containerPlayer}>
           <div className={style.player}>
             <ReactPlayer
-              className={style.player}
               light={<img src={previewGameStack} alt="Thumbnail" />}
               url={urlGameStack}
               height="100%"
@@ -37,7 +36,6 @@ export const Projects = () => {
           <div className={style.player}>
             <ReactPlayer
               url={urlCountries}
-              className={style.player}
               light={<img src={previewCountries} alt="Thumbnail" />}
               height="100%"
               width="auto"
