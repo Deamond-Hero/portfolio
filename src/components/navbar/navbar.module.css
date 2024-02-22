@@ -19,8 +19,6 @@
   list-style-type: none;
 }
 
-
-
 .navbar li {
   margin: 1rem;
 }
@@ -64,4 +62,10 @@
   button {
     background-color: #f9f9f9;
   }
+}
+
+
+.active {
+  background-color: #8b0606; /* Establece el color de fondo blanco que deseas */
+  /* Agrega cualquier otro estilo que desees para la clase .active */
 }

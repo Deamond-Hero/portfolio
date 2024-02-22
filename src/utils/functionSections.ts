@@ -4,11 +4,15 @@ export interface NavbarProps{
     projectsRef: React.RefObject<HTMLElement>;
     aboutRef: React.RefObject<HTMLElement>;
     contactRef: React.RefObject<HTMLElement>;
+    activeRef: string | null;
 }
+
+
 
 export const onClickTo = (ref: React.RefObject<HTMLElement>) => (event: React.MouseEvent<HTMLAnchorElement>) => {
     event.preventDefault(); // Evitar el comportamiento predeterminado del enlace
     if (ref.current) {
       ref.current.scrollIntoView({ behavior: 'smooth' });
+
     }
   }
