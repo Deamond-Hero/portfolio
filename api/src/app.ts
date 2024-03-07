@@ -3,9 +3,6 @@ import { Response, Request, NextFunction } from 'express';
 import  morgan  from 'morgan';
 import { router } from './routes'
 
-
-
-
 export const server = express();
 export const serverName = 'API';
 

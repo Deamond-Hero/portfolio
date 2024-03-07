@@ -14,7 +14,9 @@ export const Home = () => {
             background en diseño gráfico.
           </p>
           <div className={styles.buttonContainer}>
-            <button>Descargar CV</button>
+            <a href="https://1drv.ms/w/s!AvN4-mvWcbEgjAwi8OS1BECvHuYd?e=EC3fiq" download>
+              <button>Descargar CV</button>
+            </a>
           </div>
         </div>
         <div className={styles.imageContainer}>
