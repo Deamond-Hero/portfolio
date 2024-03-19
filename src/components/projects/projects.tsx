@@ -14,7 +14,7 @@ export const Projects = () => {
   const repoCountries = "https://github.com/Deamond-Hero/countries-henry";
 
   return (
-    <div className={style.projects}>
+    <div>
       <div className={style.container}>
         <h2 className={style.titleProjects}>Proyectos</h2>
         <div className={style.containerPlayer}>

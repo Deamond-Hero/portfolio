@@ -23,15 +23,24 @@
   margin: 1rem;
 }
 
-@media (max-width: 900px) {
+@media (max-width:915px) {
+  .containerNav button {
+    display: flex;
+    margin-right: -3rem;
+    align-items: center;
+    background-color: none;
+
+  }
+
   .open {
-    display: block;
-    background-color: #ffffff;
+    display: flex;
+    color: #f9f9f9;
+    z-index: 9999;
   }
 
   .close {
-    display: block;
-    background-color: #0a0202;
+    display: flex;
+    color: #f9f9f9;
     z-index: 9999;
   }
 
@@ -40,12 +49,20 @@
     position: absolute;
     top: 0;
     right: 0;
+    margin-right: -4rem;
     bottom: 0;
-    background-color: #fafafa;
+    padding-top: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #0a0202;
     height: 100vh;
-    padding: 2rem;
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
   }
+
+  .navbarClose{
+    display: none;
+  }
+
 }
 
 
@@ -66,6 +83,6 @@
 
 
 .active {
-  background-color: #8b0606; /* Establece el color de fondo blanco que deseas */
-  /* Agrega cualquier otro estilo que desees para la clase .active */
+  border-bottom: 2px solid white; /* Ajusta el grosor y color del subrayado según tus preferencias */
+  padding-bottom: 2px; /* Ajusta el espacio entre el texto y el subrayado según tus preferencias */
 }

@@ -12,5 +12,6 @@ import SportsKabaddiIcon from '@mui/icons-material/SportsKabaddi';
 import BarChartIcon from '@mui/icons-material/BarChart';
 import NordicWalkingIcon from '@mui/icons-material/NordicWalking';
 import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
+import MenuIcon from '@mui/icons-material/Menu';
 
-export const icons= {LinkedInIcon, GitHubIcon, AlternateEmailIcon, WhatsAppIcon, BookIcon, RowingIcon, PeopleIcon, SportsKabaddiIcon, Groups3Icon, EmojiObjectsIcon, ExtensionIcon, BarChartIcon, RocketLaunchIcon, NordicWalkingIcon}
+export const icons= {LinkedInIcon, GitHubIcon, AlternateEmailIcon, WhatsAppIcon, BookIcon, RowingIcon, PeopleIcon, SportsKabaddiIcon, Groups3Icon, EmojiObjectsIcon, ExtensionIcon, BarChartIcon, RocketLaunchIcon, NordicWalkingIcon, MenuIcon}

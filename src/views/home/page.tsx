@@ -31,7 +31,7 @@ export const Page = () => {
       setActiveRef,
       activeRef,
     };
-
+    console.log(activeRef)
     const scrollDetector = ScrollDetector(scrollDetectorProps);
 
     scrollDetector.subscribeScroll(); // Suscribirse al evento de desplazamiento
@@ -43,37 +43,38 @@ export const Page = () => {
 
   return (
     <div className={style.container}>
-      <IconBar contactRef={contactRef}
+      <IconBar
         homeRef={homeRef}
         skillsRef={skillsRef}
         projectsRef={projectsRef}
         aboutRef={aboutRef}
-        activeRef={activeRef}/>
+        contactRef={contactRef}
+        activeRef={activeRef} />
 
 
       <Navbar homeRef={homeRef}
         skillsRef={skillsRef}
         projectsRef={projectsRef}
         aboutRef={aboutRef}
-        contactRef={contactRef} 
-        activeRef={activeRef}/>
+        contactRef={contactRef}
+        activeRef={activeRef} />
 
+        <div ref={homeRef} className={style.home}>
+          <Home />
+        </div>
+        <div ref={skillsRef} className={style.skills}>
+          <Skills />
+        </div>
+        <div ref={projectsRef} className={style.projects}>
+          <Projects />
+        </div>
+        <div ref={aboutRef} className={style.about}>
+          <AboutMe />
+        </div>
+        <div ref={contactRef} className={style.contact}>
+          <Contact />
+        </div>
 
-      <div ref={homeRef} className={style.home}>
-        <Home />
-      </div>
-      <div ref={skillsRef} className={style.skills}>
-        <Skills />
-      </div>
-      <div ref={projectsRef} className={style.projects}>
-        <Projects />
-      </div>
-      <div ref={aboutRef} className={style.about}>
-        <AboutMe />
-      </div>
-      <div ref={contactRef} className={style.contact}>
-        <Contact />
-      </div>
     </div>
   );
 };

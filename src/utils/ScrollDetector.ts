@@ -17,49 +17,37 @@ export const ScrollDetector = (props: ScrollDetectorProps) => {
 
 
     const handleScroll = () => {
-        const scrollPosition = window.scrollY;
+        const scrollPosition = window.scrollY-200;
+
 
         const getBoundingBox = (ref: React.RefObject<HTMLElement>) => {
             if (ref.current) {
-                return ref.current.getBoundingClientRect();
+              return ref.current.getBoundingClientRect();
             }
             return null;
+          };
+
+        const isActive = (ref: React.RefObject<HTMLElement>) => {
+            const top = getBoundingBox(ref)?.top!;
+            const bottom = getBoundingBox(ref)?.bottom!;
+            return top <= scrollPosition && bottom >= scrollPosition;
         };
 
-        if (
-            getBoundingBox(homeRef)?.top! <= scrollPosition &&
-            getBoundingBox(homeRef)?.bottom! >= scrollPosition
-            
-        ) {
+        if (isActive(homeRef)) {
             setActiveRef("navHome");
-        } else if (
-            getBoundingBox(skillsRef)?.top! <= scrollPosition &&
-            getBoundingBox(skillsRef)?.bottom! >= scrollPosition
-        ) {
+        } else if (isActive(skillsRef)) {
             setActiveRef("navSkill");
-        } else if (
-            getBoundingBox(projectsRef)?.top! <= scrollPosition &&
-            getBoundingBox(projectsRef)?.bottom! >= scrollPosition
-        ) {
+        } else if (isActive(projectsRef)) {
             setActiveRef("navProject");
-        } else if (
-            getBoundingBox(aboutRef)?.top! <= scrollPosition &&
-            getBoundingBox(aboutRef)?.bottom! >= scrollPosition
-        ) {
+        } else if (isActive(aboutRef)) {
             setActiveRef("navAbout");
-        } else if (
-            getBoundingBox(contactRef)?.top! <= scrollPosition &&
-            getBoundingBox(contactRef)?.bottom! >= scrollPosition
-        ) {
+        } else if (isActive(contactRef)) {
             setActiveRef("navContact");
         } else {
-            // Si no estás sobre ninguna sección específica, puedes desactivar la sección activa
             setActiveRef(null);
         }
-
-        
     };
-
+        
 
 
     const subscribeScroll = () => {

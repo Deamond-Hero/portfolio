@@ -1,6 +1,5 @@
 .container {
   display: grid;
-
   grid-template-areas:
     "home home home home"
     "skills skills skills skills"
@@ -8,39 +7,68 @@
     "about about about about"
     "contact contact contact contact";
   justify-content: center;
-  overflow: 100vh;
-  width: auto;
-  height: 100vh;
- padding-left: 10%;
- padding-right: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .navbar {
   grid-area: navbar;
 }
 .home {
-  height: 100%;
   grid-area: home;
+  height: 100vh;
   display: flex;
   justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
 }
 .skills {
-  height: 100%;
   grid-area: skills;
-}
-.projects {
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+
+}
+
+.projects {
   grid-area: projects;
+  height: 100%;
+  padding: 1rem;
+
 }
 .about {
-  height: 100%;
   grid-area: about;
+  height: 100%;
+  padding: 1rem;
+  
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 
 }
 .contact {
-  height: 100vh;
   grid-area: contact;
+  height: 100vh;
+  padding: 1rem;
+
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
 }
 
 
 
+@media(max-width:915px){
+  .container{
+    height: 100vh;
+  }
+  h2{
+    margin-left: 3rem;
+  }
+}
