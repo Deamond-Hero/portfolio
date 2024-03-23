@@ -4,6 +4,7 @@
     align-items: center;
     width: 100%;
     margin-top: 10%;
+    margin-bottom: 1rem;
 }
 
 .imageContainer {
@@ -30,14 +31,14 @@
     margin: auto;
     transform: rotate(-2deg);
     transition-duration: 1500ms;
-    z-index: 1; /* Ajustar según sea necesario */
+
 }
 
 .image1:hover {
     transform: rotate(0deg);
     box-shadow: 100%; /* Revisar si necesitas más ajustes en el sombreado */
     width: 60%;
-    z-index: 1;
+
     margin: none;
 
 }

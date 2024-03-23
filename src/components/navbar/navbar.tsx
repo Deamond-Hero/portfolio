@@ -1,6 +1,6 @@
 import style from './navbar.module.css'
 import { onClickTo, NavbarProps } from '../../utils/functionSections';
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { icons } from '../../utils/icons';
 
 
@@ -15,15 +15,20 @@ const navSkill= useRef(null);
 const navProject= useRef(null);
 const navAbout= useRef(null);
 const navContact= useRef(null);
-
-
+const widthScreen = window.innerWidth;
+const [isMobile, setIsMobile] = useState(true);
 const [openMenu,setOpenMenu] = useState(false)
+
+
+useEffect(()=>{
+    if(widthScreen > 916)setIsMobile(!isMobile)
+},[widthScreen])
 
 
     return (
         <nav className={style.containerNav}>
-            <button onClick={()=>setOpenMenu(!openMenu)} className={openMenu ? style.close : style.open}><icons.MenuIcon/></button>
-            <ul className={!openMenu ? style.navbar : style.navbarClose } >
+            <button onClick={()=>setOpenMenu(!openMenu)} className={isMobile ? style.buttonVisible : style.buttonInvisible}><icons.MenuIcon/></button>
+            <ul className={isMobile ? (openMenu ? style.navbar2 : style.navbarClose) : style.navbar } >
                 <li><a href='#' ref={navHome}  className={activeRef === 'navHome' ? style.active : ''}  onClick={onClickTo(homeRef)}>Home</a></li>
                 <li><a href='#' ref={navSkill} className={activeRef === 'navSkill' ? style.active : ''}  onClick={onClickTo(skillsRef)}>Skills</a></li>
                 <li><a href='#' ref={navProject} className={activeRef === 'navProject' ? style.active : ''} onClick={onClickTo(projectsRef)}>Proyectos</a></li>

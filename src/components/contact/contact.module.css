@@ -8,10 +8,10 @@
 
 .boxContact {
     display: flex;
-    background-color: #034078;
+    height: 30rem;
     width: 70%;
+    background-color: #034078;
     margin-top: 10%;
-    height: 40rem;
     justify-content: center;
     text-align: left;
 }
@@ -41,7 +41,7 @@
     display: flex;
     flex-direction: column;
     width: 40%;
-    justify-content:flex-start;
+    justify-content: flex-start;
     margin-left: 2rem;
     margin-right: 2rem;
 }
@@ -52,13 +52,13 @@
 
 
 
-.contact{
-    height: 40%;  
+.contact {
+    height: 40%;
     display: flex;
-    flex-direction: column; 
-    align-items: flex-start; 
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: flex-end;
-    
+
 }
 
 .contact div {
@@ -82,7 +82,8 @@
     height: 30%;
 }
 
-.send{
+.send {
+
     margin-bottom: 1rem;
 }
 
@@ -97,32 +98,55 @@
 }
 
 .message {
-
-    height: 100%
+    height: 9rem;
+    width: 100%
 }
 
-.message p{
+.message textarea {
+    width: 100%;
+    height: 5rem;
+    /* Altura inicial del textarea */
+    resize: vertical;
+    /* Permite que el usuario pueda redimensionar verticalmente */
+    overflow-y: auto;
+    /* Añade una barra de desplazamiento vertical cuando el contenido excede la altura */
+    padding: 5px;
+    /* Agrega un poco de espacio interno para que el texto no toque los bordes */
+    box-sizing: border-box;
+    /* Incluye el relleno y el borde en el ancho y alto total */
+    text-align: left;
+    /* Alinea el texto a la izquierda */
+    vertical-align: top;
+    /* Alinea el texto en la parte superior del textarea */
+}
+
+.message p {
     font-size: 0.8rem;
     margin-bottom: 0.3rem;
 }
 
-.message input{
-    height: 50%;
-    width: 100%;
+
+.error {
+    color: #f3f703;
+    font-size: small;
+    padding: 0;
+    margin-bottom: -1rem;
 }
 
 
 @media (max-width:915px) {
-    .container{
+    .container {
         display: flex;
         flex-direction: column;
         width: 90%;
     }
+
     .boxContact {
         display: flex;
         flex-direction: column;
         width: 90%;
-        justify-content:center ;
+        height: 100%;
+        justify-content: center;
     }
 
     .staticContent {
@@ -130,7 +154,7 @@
         display: flex;
         flex-direction: column;
         width: 80%;
-        justify-content:flex-start;
+        justify-content: flex-start;
         margin-left: 2rem;
         margin-right: 2rem;
     }
@@ -145,6 +169,6 @@
         margin-left: 1.5rem;
         margin-right: 2rem;
 
-    
+
     }
 }
