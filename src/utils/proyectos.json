@@ -1,0 +1,70 @@
+[
+    {
+        "id": 1,
+        "title": "Countries App",
+        "puesto": "Full Stack Web Developer",
+        "type": "Académico",
+        "periodo": "Marzo 2023 - Abril 2023",
+        "institucion": "Henry Bootcamp",
+        "description": "Aplicación donde se pueden consultar diferentes países del mundo, filtrarlos, ordenarlos o encontrarlos sensitivamente con un search. Los mismos cuentan con un calendario de actividades en diferentes etapas del año. Estas actividades pueden ser editadas, eliminándolas o añadiendo otras. Tareas: Crear diseño de interfaz, crear base de datos mediante sequelize y modelos, rediseño y realización de apirest, desarrollar frontend con react.",
+        "tecnologias": [
+            "JavaScript",
+            "React",
+            "Redux",
+            "Node.js",
+            "Sequelize",
+            "PostgreSQL"
+        ],
+        "video":"https://www.youtube.com/watch?v=j7bm0bqSo9w",
+        "git":"https://github.com/Deamond-Hero/countries-henry",
+        "preview": "/src/assets/countries.png"
+    },
+    {
+        "id": 2,
+        "title": "GameStack",
+        "puesto": "Front end Developer y líder de equipo",
+        "type": "Académico",
+        "periodo": "Julio 2023 – Agosto 2023",
+        "institucion": "Henry Bootcamp",
+        "description": "En un equipo de 7 integrantes, se desarrolló bajo el entorno SCRUM, una aplicación e-commerce de videojuegos multiplataforma. Para ello se implementó versión web (Panel de administrador) y una Mobile (para usuarios). Tareas: Crear diseño de interfaz en Figma: mobile y web, crear mapa de flujo de la aplicación, desarrollar de formularios controlados (web y mobile), implementación de sesiones, autenticación local, implementación de Local y AsyncStorage. Como TL del proyecto se brindó apoyo moral y técnico a compañeros, organizar tareas y asignarlas según las fortalezas, gustos y/o preferencias.",
+        "tecnologias": [
+            "JavaScript",
+            "React",
+            "React Native",
+            "Redux Toolkit",
+            "Node.js",
+            "Sequelize",
+            "PostgreSQL",
+            "Figma",
+            "Cloudinary",
+            "Auth0",
+            "Stripe",
+            "CSS"
+        ],
+        "video":"https://www.youtube.com/watch?v=5T9n18-FRgw",
+        "git":"https://github.com/orgs/App-videjuegos/repositories",
+        "preview":"/src/assets/Game.png"
+    },
+    {
+        "id": 3,
+        "title": "Nexus",
+        "puesto": "Front end Developer y líder de equipo",
+        "type": "Práctica no remunerada",
+        "periodo": "Abril 2024 – Mayo 2024",
+        "institucion": "No-Country",
+        "description": "En un equipo interdisciplinario, en el lapso de 3 semanas, se desarrolló bajo el entorno SCRUM una aplicación para gestión de incidencias. En este proyecto, mis propios compañeros me nombraron TL del proyecto. Tareas: Crear mapa de flujo de la aplicación, historias de usuarios y lineamientos del proyecto, creación de back-end, deploy total de la aplicación, diseño de API REST, se trabajó con mayor enfoque en el front-end en componentes de formularios, flujo de admin, listas, búsqueda, filtrados y ordenamientos.",
+        "tecnologias": [
+            "JavaScript",
+            "React",
+            "Tailwind",
+            "Redux Toolkit",
+            "Node.js",
+            "Sequelize",
+            "PostgreSQL",
+            "Figma"
+        ],
+        "video":"https://www.youtube.com/watch?v=VzWVnY3HC1Q",
+        "git": "https://github.com/No-Country/c17-32-node-react/tree/Production",
+        "preview":"/src/assets/ticketera.png"
+    }
+]
