@@ -17,7 +17,7 @@
         ],
         "video":"https://www.youtube.com/watch?v=j7bm0bqSo9w",
         "git":"https://github.com/Deamond-Hero/countries-henry",
-        "preview": "/src/assets/countries.png"
+        "preview": "https://res.cloudinary.com/deamondhero/image/upload/v1714752406/oqisn8t6omqtajqfwlfd.png"
     },
     {
         "id": 2,
@@ -43,7 +43,7 @@
         ],
         "video":"https://www.youtube.com/watch?v=5T9n18-FRgw",
         "git":"https://github.com/orgs/App-videjuegos/repositories",
-        "preview":"/src/assets/Game.png"
+        "preview":"https://res.cloudinary.com/deamondhero/image/upload/v1714752406/yhkoi0zpjjs8ejtmjsdd.png"
     },
     {
         "id": 3,
@@ -65,6 +65,6 @@
         ],
         "video":"https://www.youtube.com/watch?v=VzWVnY3HC1Q",
         "git": "https://github.com/No-Country/c17-32-node-react/tree/Production",
-        "preview":"/src/assets/ticketera.png"
+        "preview":"https://res.cloudinary.com/deamondhero/image/upload/v1714752406/tjkvegleojrqixsnb62o.png"
     }
 ]
