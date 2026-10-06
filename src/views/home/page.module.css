@@ -1,74 +1,53 @@
 .container {
-  display: grid;
-  grid-template-areas:
-    "home home home home"
-    "skills skills skills skills"
-    "projects projects projects projects"
-    "about about about about"
-    "contact contact contact contact";
-  justify-content: center;
-  padding-left: 10%;
-  padding-right: 10%;
-}
-
-.navbar {
-  grid-area: navbar;
-}
-.home {
-  grid-area: home;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  padding: 1rem;
-}
-.skills {
-  grid-area: skills;
-  height: 100%;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-
-
+  gap: 4rem;
 }
 
-.projects {
-  grid-area: projects;
-  height: 100%;
-  padding: 1rem;
-
-}
-.about {
-  grid-area: about;
-  height: 100%;
-  padding: 1rem;
-  
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-
-}
+.home,
+.skills,
+.projects,
+.about,
 .contact {
-  grid-area: contact;
-  height: 100vh;
-  padding: 1rem;
-
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-
+  width: 100%;
+  min-height: auto;
+  scroll-margin-top: 5rem; /* Offsets sticky navbar when scrolling to section */
 }
 
+.home {
+  min-height: calc(100vh - 4rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
 
+.skills,
+.projects,
+.about,
+.contact {
+  padding: 3rem 0;
+}
 
-@media(max-width:915px){
-  .container{
-    height: 100vh;
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+    gap: 3rem;
   }
-  h2{
-    margin-left: 3rem;
+  
+  .home {
+    min-height: auto;
+    padding: 4rem 0 2rem 0;
+  }
+
+  .skills,
+  .projects,
+  .about,
+  .contact {
+    padding: 2rem 0;
   }
 }

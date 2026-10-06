@@ -1,28 +1,46 @@
-
 import style from "./projects.module.css";
-import projects from "../../utils/proyectos.json"
-import { VideoCard } from "../../utils/videoCard"
-
+import projects from "../../utils/proyectos.json";
+import { VideoCard } from "../../utils/videoCard";
+import rvMetalImg from "../../assets/rv-metal.png";
+import n8nImg from "../../assets/n8n.png";
 
 export const Projects = () => {
-
   return (
-    <div>
-      <div className={style.container}>
-        <h2 className={style.titleProjects}>Proyectos</h2>
-        {projects.map((data) => (
-          <div key={data.id} className={style.containerPlayer}>
-            <VideoCard
-              preview={data.preview}
-              video={data.video}
-              description={data.description}
-              git={data.git}
-              title={data.title} 
-              />
-          </div>
-        ))}
-
+    <section className={style.projectsSection}>
+      <div className={style.sectionHeader}>
+        <h2 className={style.sectionTitle}>Proyectos Destacados</h2>
+        <p className={style.sectionSubtitle}>
+          Selección de aplicaciones web, mobile y sistemas de automatización
+        </p>
       </div>
-    </div>
+
+      <div className={style.projectsGrid}>
+        {projects.map((project) => {
+          let previewImage = project.preview;
+          if (project.id === 2) {
+            previewImage = n8nImg;
+          } else if (project.id === 3) {
+            previewImage = rvMetalImg;
+          }
+
+          return (
+            <VideoCard
+              key={project.id}
+              title={project.title}
+              puesto={project.puesto}
+              type={project.type}
+              periodo={project.periodo}
+              institucion={project.institucion}
+              description={project.description}
+              tecnologias={project.tecnologias}
+              video={project.video}
+              git={project.git}
+              demoUrl={project.demoUrl}
+              preview={previewImage}
+            />
+          );
+        })}
+      </div>
+    </section>
   );
 };

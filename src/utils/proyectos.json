@@ -1,70 +1,110 @@
 [
     {
         "id": 1,
-        "title": "Countries App",
-        "puesto": "Full Stack Web Developer",
-        "type": "Académico",
-        "periodo": "Marzo 2023 - Abril 2023",
-        "institucion": "Henry Bootcamp",
-        "description": "Aplicación donde se pueden consultar diferentes países del mundo, filtrarlos, ordenarlos o encontrarlos sensitivamente con un search. Los mismos cuentan con un calendario de actividades en diferentes etapas del año. Estas actividades pueden ser editadas, eliminándolas o añadiendo otras. Tareas: Crear diseño de interfaz, crear base de datos mediante sequelize y modelos, rediseño y realización de apirest, desarrollar frontend con react.",
+        "title": "Plataforma de Gestión de Transporte",
+        "puesto": "Full Stack Developer",
+        "type": "Pigmalion Software",
+        "periodo": "2025 - 2026",
+        "institucion": "Pigmalion Software",
+        "description": "Desarrollo integral de plataforma empresarial de gestión de transporte compuesta por API en Node.js/Express, panel administrativo en Next.js/React y app móvil en React Native. Facturación electrónica ARCA, FCE, integraciones M2M/B2B vía REST APIs y webhooks. Tracking GPS en segundo plano Android, Sentry, despliegue con Docker, AWS, PM2, Vercel y Load Balancer.",
         "tecnologias": [
-            "JavaScript",
-            "React",
-            "Redux",
+            "TypeScript",
+            "Next.js",
+            "React Native",
             "Node.js",
-            "Sequelize",
-            "PostgreSQL"
+            "Express",
+            "Docker",
+            "AWS",
+            "PM2",
+            "Sentry",
+            "ARCA API"
         ],
-        "video":"https://www.youtube.com/watch?v=j7bm0bqSo9w",
-        "git":"https://github.com/Deamond-Hero/countries-henry",
+        "video": "",
+        "git": "https://github.com/Deamond-Hero",
         "preview": "https://res.cloudinary.com/deamondhero/image/upload/v1714752406/oqisn8t6omqtajqfwlfd.png"
     },
     {
         "id": 2,
-        "title": "GameStack",
-        "puesto": "Front end Developer y líder de equipo",
-        "type": "Académico",
+        "title": "Sistema de Automatización de Contenidos",
+        "puesto": "Automation Developer",
+        "type": "Docenteca",
+        "periodo": "2026 - Actualidad",
+        "institucion": "Docenteca",
+        "description": "Sistema automatizado para la selección y planificación de contenidos semanales para docentes. Desarrollado con n8n y PostgreSQL, cruza el calendario escolar, efemérides y planes de estudio mediante lógica de ponderación algorítmica. Integración con WhatsApp API y servicios de comunicación automática.",
+        "tecnologias": [
+            "n8n",
+            "PostgreSQL",
+            "APIs REST",
+            "Webhooks",
+            "WhatsApp API",
+            "Node.js"
+        ],
+        "video": "",
+        "git": "https://github.com/Deamond-Hero",
+        "preview": "https://res.cloudinary.com/deamondhero/image/upload/v1714752406/tjkvegleojrqixsnb62o.png"
+    },
+    {
+        "id": 3,
+        "title": "Catálogo Autogestionable (RV Metal)",
+        "puesto": "Frontend Dev & Product Owner",
+        "type": "Atomic-Cat",
+        "periodo": "Agosto 2024 - Actualidad",
+        "institucion": "Atomic-Cat",
+        "description": "Desarrollo de catálogo comercial online autogestionable (RV Metal) y liderazgo de equipo en rol de Product Owner y Scrum Master. Coordinación entre frontend, backend y cliente final, facilitando demostraciones de sprint y definiendo arquitectura.",
+        "tecnologias": [
+            "Next.js",
+            "TypeScript",
+            "Tailwind CSS",
+            "Redux Toolkit",
+            "Scrum / PO",
+            "Figma"
+        ],
+        "video": "",
+        "git": "https://github.com/Deamond-Hero",
+        "demoUrl": "https://www.rv-metal.com/",
+        "preview": "https://res.cloudinary.com/deamondhero/image/upload/v1714752406/yhkoi0zpjjs8ejtmjsdd.png"
+    },
+    {
+        "id": 4,
+        "title": "Nexus App - Gestión de Incidencias",
+        "puesto": "Front end Developer & TL",
+        "type": "No-Country",
+        "periodo": "Abril 2024 – Mayo 2024",
+        "institucion": "No-Country",
+        "description": "Aplicación web para gestión empresarial de incidencias desarrollada bajo entorno SCRUM. Liderazgo del equipo de front-end, diseño de REST API, historias de usuarios y despliegue continuo.",
+        "tecnologias": [
+            "JavaScript",
+            "React",
+            "Tailwind CSS",
+            "Redux Toolkit",
+            "Node.js",
+            "Sequelize",
+            "PostgreSQL"
+        ],
+        "video": "https://www.youtube.com/watch?v=VzWVnY3HC1Q",
+        "git": "https://github.com/No-Country/c17-32-node-react/tree/Production",
+        "preview": "https://res.cloudinary.com/deamondhero/image/upload/v1714752406/tjkvegleojrqixsnb62o.png"
+    },
+    {
+        "id": 5,
+        "title": "GameStack Multiplatform E-commerce",
+        "puesto": "Front end Dev & Team Lead",
+        "type": "Henry Bootcamp",
         "periodo": "Julio 2023 – Agosto 2023",
         "institucion": "Henry Bootcamp",
-        "description": "En un equipo de 7 integrantes, se desarrolló bajo el entorno SCRUM, una aplicación e-commerce de videojuegos multiplataforma. Para ello se implementó versión web (Panel de administrador) y una Mobile (para usuarios). Tareas: Crear diseño de interfaz en Figma: mobile y web, crear mapa de flujo de la aplicación, desarrollar de formularios controlados (web y mobile), implementación de sesiones, autenticación local, implementación de Local y AsyncStorage. Como TL del proyecto se brindó apoyo moral y técnico a compañeros, organizar tareas y asignarlas según las fortalezas, gustos y/o preferencias.",
+        "description": "Plataforma e-commerce multiplataforma de videojuegos. Panel web de administración y aplicación móvil para usuarios. Autenticación Auth0, pasarela de pagos Stripe y almacenamiento Cloudinary.",
         "tecnologias": [
             "JavaScript",
             "React",
             "React Native",
             "Redux Toolkit",
             "Node.js",
-            "Sequelize",
             "PostgreSQL",
-            "Figma",
-            "Cloudinary",
             "Auth0",
-            "Stripe",
-            "CSS"
+            "Stripe"
         ],
-        "video":"https://www.youtube.com/watch?v=5T9n18-FRgw",
-        "git":"https://github.com/orgs/App-videjuegos/repositories",
-        "preview":"https://res.cloudinary.com/deamondhero/image/upload/v1714752406/yhkoi0zpjjs8ejtmjsdd.png"
-    },
-    {
-        "id": 3,
-        "title": "Nexus",
-        "puesto": "Front end Developer y líder de equipo",
-        "type": "Práctica no remunerada",
-        "periodo": "Abril 2024 – Mayo 2024",
-        "institucion": "No-Country",
-        "description": "En un equipo interdisciplinario, en el lapso de 3 semanas, se desarrolló bajo el entorno SCRUM una aplicación para gestión de incidencias. En este proyecto, mis propios compañeros me nombraron TL del proyecto. Tareas: Crear mapa de flujo de la aplicación, historias de usuarios y lineamientos del proyecto, creación de back-end, deploy total de la aplicación, diseño de API REST, se trabajó con mayor enfoque en el front-end en componentes de formularios, flujo de admin, listas, búsqueda, filtrados y ordenamientos.",
-        "tecnologias": [
-            "JavaScript",
-            "React",
-            "Tailwind",
-            "Redux Toolkit",
-            "Node.js",
-            "Sequelize",
-            "PostgreSQL",
-            "Figma"
-        ],
-        "video":"https://www.youtube.com/watch?v=VzWVnY3HC1Q",
-        "git": "https://github.com/No-Country/c17-32-node-react/tree/Production",
-        "preview":"https://res.cloudinary.com/deamondhero/image/upload/v1714752406/tjkvegleojrqixsnb62o.png"
+        "video": "https://www.youtube.com/watch?v=5T9n18-FRgw",
+        "git": "https://github.com/orgs/App-videjuegos/repositories",
+        "preview": "https://res.cloudinary.com/deamondhero/image/upload/v1714752406/yhkoi0zpjjs8ejtmjsdd.png"
     }
 ]

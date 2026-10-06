@@ -1,68 +1,74 @@
-.bar{
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    right: 2rem;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-
-    
+.bar {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 99;
+  gap: 0.85rem;
+  padding: 0.6rem;
+  margin: 0;
+  list-style: none;
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border-subtle);
+  border-radius: 9999px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
-.bar li{
-    display: flex;
-    background-color: #FFFFFF ;
-    border-radius: 100%;
-    width: 4rem;
-    height: 4rem;
-    list-style-type: none;
-    color: #0A1128;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    margin-top: 2rem;
+.bar li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid transparent;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-.bar li:hover{
-    transform: scale(1.2);
-    transition-duration: 1000ms;
+.bar li:hover {
+  background: var(--primary-gradient);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.12);
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
 }
 
-.bar li:not(:hover){
-    transform: scale(1);
-    transition-duration: 1000ms;
+.bar a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-main);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transition: color 0.2s ease;
 }
 
-
-.bar a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: #0A1128;
-    
-    
+.bar li:hover a {
+  color: #0f172a;
 }
 
-
-.bar .github img{
-    width: 4.2rem;
+.bar svg {
+  font-size: 1.35rem;
 }
 
-.bar img{
-    width: 2.5rem;
-    
+@media (max-width: 768px) {
+  .bar {
+    right: 0.75rem;
+    gap: 0.6rem;
+    padding: 0.5rem;
+  }
+
+  .bar li {
+    width: 2.35rem;
+    height: 2.35rem;
+  }
+
+  .bar svg {
+    font-size: 1.15rem;
+  }
 }
-
-@media (max-width:915px){
-    .bar{
-
-        right: 1rem;
-    }
-
-
-    
-}
-

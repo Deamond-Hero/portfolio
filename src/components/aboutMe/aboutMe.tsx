@@ -1,29 +1,45 @@
-import styles from './about.module.css'
-import image1 from '../../assets/20191231_113910-min.jpg'
-import image2 from '../../assets/reset-img.png'
+import styles from "./about.module.css";
+import image1 from "../../assets/20191231_113910-min.jpg";
+import image2 from "../../assets/reset-img.png";
 
 export const AboutMe = () => {
-    return (
+  return (
+    <section className={styles.aboutSection}>
+      <div className={styles.sectionHeader}>
+        <h2 className={styles.sectionTitle}>Sobre mí</h2>
+        <p className={styles.sectionSubtitle}>Perfil profesional, visión de producto y filosofía de trabajo</p>
+      </div>
 
-        <div className={styles.container}>
-            <div className={styles.imageContainer}>
-                <img className={styles.image1} src={image1} alt='imagen1' />
-                <img className={styles.image2} src={image2} alt='imagen2' />
-            </div>
-            <div className={styles.paragraph}>
-                <h2>Sobre mi</h2>
-                <p>
-                    Soy un Full Stack Web Developer con experiencia en diseño gráfico, enfocado principalmente en el frontend.
-
-                    Mis habilidades abarcan el uso de React y React Native, la creación de bases de datos con Postgres, y el desarrollo de API REST con Node.js. Soy reconocido por ser proactivo, empático y organizado en situaciones profesionalmente desafiantes.
-
-                    Me destaco en el uso de metodologías ágiles y herramientas como GIT y Trello para una gestión efectiva de proyectos.
-                    El uso de Figma es fundamental para lograr un flujo de trabajo ordenado y bien visionado en un entorno profesionalmente desafiante.
-                    Mi experiencia como emprendedor y trabajador autónomo me ha mantenido en constante mejora, siendo altamente competente en el mercado.</p>
-                <h2>Mis pasiones</h2>
-                <p>
-                Mis cables a tierra son pedalear y pasar horas en mi taller trabajando con mis maquinas, creando cosas. La tecnología me fascina, así que siempre estoy al tanto de cada novedad. De ahí surge mi gran pasión por la programación, un campo en el que constantemente uno debe reinventarse.</p>
-            </div>
+      <div className={styles.gridContainer}>
+        {/* Photo Gallery Stack */}
+        <div className={styles.galleryWrapper}>
+          <div className={`${styles.photoCard} ${styles.card1}`}>
+            <img src={image1} alt="Leandro trabajando en proyectos" />
+          </div>
+          <div className={`${styles.photoCard} ${styles.card2}`}>
+            <img src={image2} alt="Espacio de trabajo" />
+          </div>
         </div>
-    )
-}
+
+        {/* Text Bio */}
+        <div className={styles.textContent}>
+          <div className={styles.bioCard}>
+            <h3 className={styles.subHeading}>Full Stack Developer (Frontend & Mobile)</h3>
+            <p>
+              Soy Full Stack Developer con especialización en <strong>Frontend y Mobile</strong>, con experiencia en productos reales utilizando <strong>TypeScript, React, Next.js, React Native, Node.js y PostgreSQL</strong>.
+            </p>
+            <p>
+              Mi principal fortaleza es la <strong>resolución de problemas</strong>: entender una necesidad de negocio, adquirir rápidamente el contexto técnico necesario y transformarla en una solución validada y lista para producción.
+            </p>
+            <p>
+              He trabajado de punta a punta sobre desarrollo, integraciones M2M/B2B, automatizaciones con n8n, despliegues (Docker, AWS, PM2, Vercel) y estabilización de sistemas, manteniendo siempre una mirada orientada al producto.
+            </p>
+            <p>
+              Mi formación universitaria en Sistemas e historia en <strong>Diseño Gráfico</strong> complementan mi perfil técnico con criterio visual exigente y buenas prácticas de UI/UX.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
