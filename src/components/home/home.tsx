@@ -35,10 +35,6 @@ export const Home = () => {
               <span>Descargar CV</span>
               <icons.RocketLaunchIcon className={styles.btnIcon} />
             </a>
-
-            <a href="#projects" className={styles.secondaryBtn}>
-              <span>Ver Experiencia & Proyectos</span>
-            </a>
           </div>
         </div>
 

@@ -5,7 +5,7 @@
   padding: 0 1.5rem;
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 3.5rem;
 }
 
 .home,
@@ -15,39 +15,39 @@
 .contact {
   width: 100%;
   min-height: auto;
-  scroll-margin-top: 5rem; /* Offsets sticky navbar when scrolling to section */
+  scroll-margin-top: 4.5rem; /* Offsets sticky navbar when scrolling to section */
 }
 
 .home {
-  min-height: calc(100vh - 4rem);
+  min-height: calc(100vh - 4.5rem);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem 0;
+  padding: 1.5rem 0;
 }
 
 .skills,
 .projects,
 .about,
 .contact {
-  padding: 3rem 0;
+  padding: 2.5rem 0;
 }
 
 @media (max-width: 768px) {
   .container {
     padding: 0 1rem;
-    gap: 3rem;
+    gap: 2.5rem;
   }
   
   .home {
     min-height: auto;
-    padding: 4rem 0 2rem 0;
+    padding: 1rem 0 1.5rem 0;
   }
 
   .skills,
   .projects,
   .about,
   .contact {
-    padding: 2rem 0;
+    padding: 1.5rem 0;
   }
 }

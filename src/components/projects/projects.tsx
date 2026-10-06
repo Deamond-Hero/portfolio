@@ -3,6 +3,7 @@ import projects from "../../utils/proyectos.json";
 import { VideoCard } from "../../utils/videoCard";
 import rvMetalImg from "../../assets/rv-metal.png";
 import n8nImg from "../../assets/n8n.png";
+import transporteImg from "../../assets/transporte.png";
 
 export const Projects = () => {
   return (
@@ -17,7 +18,9 @@ export const Projects = () => {
       <div className={style.projectsGrid}>
         {projects.map((project) => {
           let previewImage = project.preview;
-          if (project.id === 2) {
+          if (project.id === 1) {
+            previewImage = transporteImg;
+          } else if (project.id === 2) {
             previewImage = n8nImg;
           } else if (project.id === 3) {
             previewImage = rvMetalImg;
