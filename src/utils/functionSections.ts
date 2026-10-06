@@ -2,6 +2,7 @@ export interface NavbarProps{
     homeRef: React.RefObject<HTMLElement>;
     skillsRef: React.RefObject<HTMLElement>;
     projectsRef: React.RefObject<HTMLElement>;
+    experienceRef?: React.RefObject<HTMLElement>;
     aboutRef: React.RefObject<HTMLElement>;
     contactRef: React.RefObject<HTMLElement>;
     activeRef: string | null;

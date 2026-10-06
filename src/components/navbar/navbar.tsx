@@ -7,6 +7,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   homeRef,
   skillsRef,
   projectsRef,
+  experienceRef,
   aboutRef,
   contactRef,
   activeRef,
@@ -14,14 +15,17 @@ export const Navbar: React.FC<NavbarProps> = ({
   const navHome = useRef<HTMLAnchorElement>(null);
   const navSkill = useRef<HTMLAnchorElement>(null);
   const navProject = useRef<HTMLAnchorElement>(null);
+  const navExperience = useRef<HTMLAnchorElement>(null);
   const navAbout = useRef<HTMLAnchorElement>(null);
   const navContact = useRef<HTMLAnchorElement>(null);
 
   const [openMenu, setOpenMenu] = useState(false);
 
   // Close mobile menu on clicking any navigation link
-  const handleNavClick = (ref: React.RefObject<HTMLElement>) => (e: React.MouseEvent<HTMLAnchorElement>) => {
-    onClickTo(ref)(e);
+  const handleNavClick = (ref?: React.RefObject<HTMLElement>) => (e: React.MouseEvent<HTMLAnchorElement>) => {
+    if (ref) {
+      onClickTo(ref)(e);
+    }
     setOpenMenu(false);
   };
 
@@ -76,6 +80,16 @@ export const Navbar: React.FC<NavbarProps> = ({
                 onClick={handleNavClick(projectsRef)}
               >
                 Proyectos
+              </a>
+            </li>
+            <li>
+              <a
+                href="#experience"
+                ref={navExperience}
+                className={activeRef === "navExperience" ? style.active : ""}
+                onClick={handleNavClick(experienceRef)}
+              >
+                Experiencia
               </a>
             </li>
             <li>

@@ -11,6 +11,7 @@
 .home,
 .skills,
 .projects,
+.experience,
 .about,
 .contact {
   width: 100%;
@@ -28,6 +29,7 @@
 
 .skills,
 .projects,
+.experience,
 .about,
 .contact {
   padding: 2.5rem 0;
@@ -46,6 +48,7 @@
 
   .skills,
   .projects,
+  .experience,
   .about,
   .contact {
     padding: 1.5rem 0;

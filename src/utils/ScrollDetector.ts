@@ -3,6 +3,7 @@ export interface ScrollDetectorProps {
     homeRef: React.RefObject<HTMLElement>;
     skillsRef: React.RefObject<HTMLElement>;
     projectsRef: React.RefObject<HTMLElement>;
+    experienceRef?: React.RefObject<HTMLElement>;
     aboutRef: React.RefObject<HTMLElement>;
     contactRef: React.RefObject<HTMLElement>;
     setActiveRef: React.Dispatch<React.SetStateAction<string | null>>;
@@ -13,24 +14,23 @@ export interface ScrollDetectorProps {
 
 
 export const ScrollDetector = (props: ScrollDetectorProps) => {
-    const { homeRef, skillsRef, projectsRef, aboutRef, contactRef, setActiveRef } = props;
-
+    const { homeRef, skillsRef, projectsRef, experienceRef, aboutRef, contactRef, setActiveRef } = props;
 
     const handleScroll = () => {
-        const scrollPosition = window.scrollY-200;
+        // Handle bottom of page edge-case for contact section
+        const isAtBottom = window.innerHeight + Math.ceil(window.scrollY) >= document.documentElement.scrollHeight - 50;
+        if (isAtBottom && contactRef.current) {
+            setActiveRef("navContact");
+            return;
+        }
 
+        // Viewport threshold in pixels from the top of the screen (accounting for header height ~72px)
+        const threshold = 180;
 
-        const getBoundingBox = (ref: React.RefObject<HTMLElement>) => {
-            if (ref.current) {
-              return ref.current.getBoundingClientRect();
-            }
-            return null;
-          };
-
-        const isActive = (ref: React.RefObject<HTMLElement>) => {
-            const top = getBoundingBox(ref)?.top!;
-            const bottom = getBoundingBox(ref)?.bottom!;
-            return top <= scrollPosition && bottom >= scrollPosition;
+        const isActive = (ref: React.RefObject<HTMLElement> | undefined) => {
+            if (!ref || !ref.current) return false;
+            const rect = ref.current.getBoundingClientRect();
+            return rect.top <= threshold && rect.bottom > threshold;
         };
 
         if (isActive(homeRef)) {
@@ -39,19 +39,18 @@ export const ScrollDetector = (props: ScrollDetectorProps) => {
             setActiveRef("navSkill");
         } else if (isActive(projectsRef)) {
             setActiveRef("navProject");
+        } else if (experienceRef && isActive(experienceRef)) {
+            setActiveRef("navExperience");
         } else if (isActive(aboutRef)) {
             setActiveRef("navAbout");
         } else if (isActive(contactRef)) {
             setActiveRef("navContact");
-        } else {
-            setActiveRef(null);
         }
     };
-        
-
 
     const subscribeScroll = () => {
-        window.addEventListener("scroll", handleScroll);
+        handleScroll(); // Execute once on subscribe to set initial state
+        window.addEventListener("scroll", handleScroll, { passive: true });
     };
 
     const unsubscribeScroll = () => {

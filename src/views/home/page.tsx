@@ -4,6 +4,7 @@ import { Contact } from "../../components/contact/contact";
 import { Navbar } from "../../components/navbar/navbar";
 import { Skills } from "../../components/skills/skills";
 import { Projects } from "../../components/projects/projects";
+import { Experience } from "../../components/experience/experience";
 import { IconBar } from "../../components/iconsToolbar/iconsBar";
 import style from "./page.module.css";
 import { useEffect, useRef, useState } from "react";
@@ -14,11 +15,12 @@ export const Page = () => {
 
   const [activeRef, setActiveRef] = useState<string | null>(null);
 
-  const homeRef = useRef(null)
-  const skillsRef = useRef(null)
-  const projectsRef = useRef(null)
-  const aboutRef = useRef(null)
-  const contactRef = useRef(null)
+  const homeRef = useRef(null);
+  const skillsRef = useRef(null);
+  const projectsRef = useRef(null);
+  const experienceRef = useRef(null);
+  const aboutRef = useRef(null);
+  const contactRef = useRef(null);
 
 
   useEffect(() => {
@@ -26,12 +28,12 @@ export const Page = () => {
       homeRef,
       skillsRef,
       projectsRef,
+      experienceRef,
       aboutRef,
       contactRef,
       setActiveRef,
       activeRef,
     };
-    console.log(activeRef)
     const scrollDetector = ScrollDetector(scrollDetectorProps);
 
     scrollDetector.subscribeScroll(); // Suscribirse al evento de desplazamiento
@@ -39,7 +41,7 @@ export const Page = () => {
     return () => {
       scrollDetector.unsubscribeScroll(); // Desuscribirse al desmontar el componente
     };
-  }, [activeRef]);
+  }, []);
 
   return (
     <div className={style.container}>
@@ -47,6 +49,7 @@ export const Page = () => {
         homeRef={homeRef}
         skillsRef={skillsRef}
         projectsRef={projectsRef}
+        experienceRef={experienceRef}
         aboutRef={aboutRef}
         contactRef={contactRef}
         activeRef={activeRef} />
@@ -55,26 +58,31 @@ export const Page = () => {
       <Navbar homeRef={homeRef}
         skillsRef={skillsRef}
         projectsRef={projectsRef}
+        experienceRef={experienceRef}
         aboutRef={aboutRef}
         contactRef={contactRef}
         activeRef={activeRef} />
 
-        <div ref={homeRef} className={style.home}>
+        <div ref={homeRef} id="home" className={style.home}>
           <Home />
         </div>
-        <div ref={skillsRef} className={style.skills}>
+        <div ref={skillsRef} id="skills" className={style.skills}>
           <Skills />
         </div>
-        <div ref={projectsRef} className={style.projects}>
+        <div ref={projectsRef} id="projects" className={style.projects}>
           <Projects />
         </div>
-        <div ref={aboutRef} className={style.about}>
+        <div ref={experienceRef} id="experience" className={style.experience}>
+          <Experience />
+        </div>
+        <div ref={aboutRef} id="about" className={style.about}>
           <AboutMe />
         </div>
-        <div ref={contactRef} className={style.contact}>
+        <div ref={contactRef} id="contact" className={style.contact}>
           <Contact />
         </div>
 
     </div>
   );
 };
+
